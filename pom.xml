@@ -1,0 +1,27 @@
+<project>
+  <groupId>uk.org.taverna</groupId>
+  <artifactId>shared-resources</artifactId>
+  <version>1</version>
+  <modelVersion>4.0.0</modelVersion>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-remote-resources-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>bundle</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <includes>
+		  <include>**/*.xsd</include>
+                  <include>**/*.txt</include>
+          </includes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
